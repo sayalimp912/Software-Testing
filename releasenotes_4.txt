@@ -1,0 +1,36 @@
+Release 4 comments:
+1. Technical Review and Presentation: 17/20
+2. Test Plan (24/30):
+	- The overall outline looks good. Note that the test plan (specifically, the results and interpretation should be presented from the SUT's viewpoint, not what the tool or technique does). For example, what does a certain result/metric from the metric_fu report or the rspec report mean to the SUT?
+	- It's ok to not have a master test report, but somewhere in the test plan, you should look at connections/correlations, differences and similarities between results from different levels and different techniques. It's also ok to combine the plan and results/report (don't have to seperate sections; it's up to your team on how you want to organize it).
+	- We will go over all these results and each project goal in the context of the SUT, during the pre-final release. 
+3. Progress: (20/20)
+	- Consistent progress. 
+4. On-time release and release notes: (10/10)
+_________________________________________________________________________
+ReleaseNotes#4
+
+Updates in Project Proposal:
+As part of Testing, we have prepared reports on the areas of code that could be improved using Metric_fu.
+
+Updates in Test Plan:
+Changed the format of test plan. ( Refer http://www.softwaretestinghelp.com/wp-content/qa/uploads/2007/07/sample-test-plan-template.pdf )
+Added testing details regarding Metric_fu in Static Testing section.
+Added the Quality Assurance section in the test plan. 
+
+Comments on Test Plan: 
+The test plan has all the information needed for a master test plan, level test plan and level test report. The format is a little different and hence there is no different section as Master test plan, level test plan and level test report as such, but it includes almost all the information listed in the above sections.
+
+Questions on Test Plan:
+In what tense are we supposed to write a test plan? We are not sure if we have used the correct tense.
+
+Updates in Test Support:
+Added reports generated from Metric_fu and GitStats.
+
+Updates in Tool Support:
+Added instructions for Metric_fu, GitStats and Rack-mini-profiler.
+
+
+TODO for next release:
+1. Analyze the remaining results and update Master Test Report part.
+2. Update the test plan with what we have learnt in class.

@@ -1,0 +1,27 @@
+Release 1 comments:
+
+1. Revisions to project proposal (25/25):
+	- Proposal approved
+	- Since the SUT has multiple commits, I suggest an analysis of the 	repository commits and generate statistics using gitstats or gitinspector.
+	- See project proposal documents for additonal comments, if any.
+
+
+2. Software Inspection (30/30):
+	- Compliance to software inspection process (10)
+	- Inspection logs (20)
+		* This is good for now. For the final release, you should perform an analysis on these defects and summarize/interpret the results, including comparisons to results from the static analyzer. (See Section 9 of "Static Analysis - Process Description" on Blackboard for summary of "Measurements". It will be useful to report these metrics). 
+
+3. Release notes (5/5)
+
+___________________________________________________________________
+
+Release #1
+
+Updates to Project Goals - 
+1. We have decided to consider the following modules - Dashboard, Tasks, Leads and Users.
+2. In the next release we will analyze the code using a tool and the results will be further analyzed to determine any correlation with results from manual inspection.
+These changes can be found in the Software Testing part of the proposal.
+
+Manual Inspection - 
+We have performed manual inspection on the above stated modules and reports are created using spreadsheets. 
+Reports are created in manual_testing_reports.xls

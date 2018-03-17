@@ -1,0 +1,45 @@
+﻿Release 3 comments: 
+
+
+1. Overall, good progress.While this is sufficient for this release, your team should interpret each of the results (the snapshots by themselves don't mean anything) and provide meaningful results for the final release. 
+
+2. For release 4 in-class presentation, your team may demonstrate selenium and Rspec results (you are welcome to present other results). See project deliverables write-up for more information on release 4. 
+
+3.Proposal change approved. In lieu of Watir, I suggest that you also consider generating quality metrics using metric_fu. If rubocop and metric fu seem to overlap, then you may choose one of them, but I believe metricfu gives different information.  No more changes!
+
+4. The test plan is vague and doesn't have much useful information. See comments from release 2 on how to build and mantain a test plan. 
+__________________________________
+ReleaseNotes#3
+
+Updates in Project Proposal:
+We were reluctant in using Watir and selenium for this particular release as both of them overlap each other in terms of functionality and it did not sound an optimal or a precise way to copy the same code and run it on some other similar tool just for the sake of doing it. Instead of that our team decided to run the code exclusively in Selenium, we chose Selenium due to its high demand and wide usage. Moreover, we wanted to abide with the core meaning of doing this project which is to learn something new and that’s when we thought about running the code in Rspec and analyzing the results of our already produced test cases.
+
+Updates in Test Plan: 
+For this particular release our team wanted to explore new grounds of User Interface Testing under dynamic testing and we have updated the milestones accordingly. 
+
+Part 1:
+
+Acceptance Testing and Reporting using Capybara and Selenium - 
+The test cases can be found in the spec/features folder of the repository.
+The reports generated (Selenium_Reports) can be found in the Test Support folder.
+The commands to generate the reports can be found in the installation and usage instruction document in the Tool Support folder.
+
+Part 2:
+
+Rspec Test Cases and Reporting -
+The test cases can be found in the spec folder of the repository.
+The reports generated (Rspec_Reports) can be found in the Test Support folder.
+The commands to generate the reports can be found in the installation and usage instruction document in the Tool Support folder.
+
+Part 3:
+Added the following folders in the repository - 
+
+Test Support - 
+This folder contains all the reports - 
+1. Manual Testing report
+2. Code Coverage Report
+3. Rspec Reports
+4. Selenium Reports
+
+Tool Support - 
+This folder contains all the installation and usage instructions.

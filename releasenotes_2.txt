@@ -1,0 +1,61 @@
+﻿Release 2 comments:
+
+1. Preliminary test plan (15/15):
+	- Good start on the test plan. I like the tags (system and unit) and ones that identify different modules (nice job!)
+	- For the next release, let's continue to update the test plan, and start integrating findings/test results, as well. Here are some instructions:
+		* We will use same document to record the test-QA plan and associated findings. This document will include Master Test-QA plan (see section 8 of IEEE guidelines), Level test plans (see section 9), level test reports (section 16) and master test report (section 17)
+		* Master test - QA plan = include all activities/test levels as per YOUR project goals, tools, techniques etc...(again, see section 8). 
+		* Level test plans will include information on each level/activity (for example, unit testing, system testing, static analysis etc; if you are using toosl for part of the testing, you don't have to duplicate them in the document. Just point to tool, and include any descriptions needed such as module being tested etc., in the document)
+		* Level test report (see section 16) - include results and findings as and when you complete a goal (if results are from a tool or in the form of a report, point to the report/resource, and include analyses and interpretations, as you see fit). 
+		* Master test report - tie all the results in individual levels/activities and provide overall evaluation of the SUT(s); see section 17. 
+		* You don't have to create all of this for the next release. These instructions are meant to guide your documentation throughtout the project and allow for effective focus on test/QA activities. 
+
+
+2. Progress (20/20):
+	- good progress!
+	- Create "test support" folder and move all the reports, snap shots etc into that folder (this way,it is easy to refer/point to them in your test-plan document. 
+	- Create "tool support" folder and move all instructions (such as installation and usage notes) into that folder.
+
+3. Release notes (5/5)
+
+___________________________________________________________________
+
+ReleaseNotes#2
+
+Updates to Project Goals - 
+As part of the Quality Assurance tasks, we will also perform analysis on the Github commits to generate repository statistics using "GitStats".
+
+Part 1:
+For this particular release our team has extensively worked on achieving our decided goals for week 3 of our project. We have touched upon the following topics for this release:
+We have derived code coverage for fatfree crm and uploaded its pdf report file. Moreover, we have precisely highlighted individual file related to our each module.
+To navigate, visit fatfree crm repo, click on ‘coverage’ folder and then click on ‘index.html’ file. The following will give a list of file names on the left hand side of the screen which when clicked upon will show lines in two different colors, i.e. green and red which has their particular significances. Green coded lines shows the lines covered whereas the red coded lines shows the lines missing for a particular file in a particular module.
+
+Installation and Usage of SimpleCov:
+	Add SimpleCov to your Gemfile and bundle install:
+		gem 'simplecov', :require => false, :group => :test
+	Load and launch Simplecov at the top of your spec_helper.rb file:
+		require ‘simplecov’
+		SimpleCov.start 
+	If SimpleCov starts after our application code is already loaded, it won't be able to track our files and their respective coverage! 
+	The "SimpleCov.start" must be issued before any of our application code is required this serves as the reason of writing it in spec_helper.rb file.
+
+
+Part 2:
+As suggested in our project proposal we have performed static analysis on the system under test with the aid of a unique ruby static code analyzer 'Rubocop'.
+
+Installation and Usage of Rubocop: 
+	Add Rubocop to your Gemfile and bundle install : 
+		gem ‘rubocop’, require: false
+	Pass rubocop a list of files and directories to check and save the output in : 
+		rubocop app/controllers/home_controller.rb -o rubocop_home_controller.txt
+	Using above mentioned commands our team has employed the input files to generate the following output files inside our repository:
+	1.	rubocop_home_controller.txt which corresponds to Dashboard module.
+	2.	rubocop_lead_controller.txt and rubocop_lead_model.txt which corresponds to Lead module.
+	3.	rubocop_task_controller.txt and rubocop_task_model.txt which corresponds to Task module.
+	4.	rubocop_users_controller.txt and rubocop_users_model.txt which corresponds to User module.
+
+ As a part of our team proposal we have intensively collated manual testing results with few related outputs from Rubocop and updated the same in our report (manual_testing_report).
+
+Part 3:
+We are attaching our preliminary test plan as a part of this release named as "test_plan.docx", we would be updating it progressively. 
+As of now, we are done with our static testing objective which comprised of extensive manual inspection of four different modules. Furthermore, we also completed static testing using a static analyzer tool called "Rubocop" and created report regarding the same. Moreover, we have compared manual testing results with results obtained via rubocop. Our team has used SimpleCov to generate report on code coverage of the system and additionally we have analyzed and interpretated the results eloquently in our test plan.
